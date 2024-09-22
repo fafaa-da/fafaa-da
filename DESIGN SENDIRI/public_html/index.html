@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gempak Games Portal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Verdana', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff007f, #00f9ff);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 0 0 10px #00f9ff, 0 0 20px #ff007f;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #00f9ff;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #00f9ff;
+            color: #000;
+            box-shadow: 0 0 10px #00f9ff, 0 0 20px #ff007f;
+        }
+
+        .hero {
+            height: 400px;
+            background-image: url('https://via.placeholder.com/1920x400');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            color: #ff007f;
+            text-shadow: 0 0 20px #00f9ff;
+        }
+
+        .games-section {
+            padding: 40px;
+            text-align: center;
+            background-color: #111;
+        }
+
+        .games-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ff007f;
+            text-shadow: 0 0 10px #00f9ff;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00f9ff, 0 0 20px #ff007f;
+        }
+
+        .game-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .game-card h3 {
+            font-size: 24px;
+            margin: 15px 0;
+            color: #ff007f;
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #ff007f;
+        }
+
+        footer p {
+            font-size: 16px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Gempak Games Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#tournaments">Tournaments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Enter the World of Epic Games!</h2>
+    </section>
+
+    <section id="games" class="games-section">
+        <h2>Featured Games</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <img src="https://via.placeholder.com/200x200" alt="Game 1">
+                <h3>Game Title 1</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/200x200" alt="Game 2">
+                <h3>Game Title 2</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/200x200" alt="Game 3">
+                <h3>Game Title 3</h3>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/200x200" alt="Game 4">
+                <h3>Game Title 4</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gempak Games Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
